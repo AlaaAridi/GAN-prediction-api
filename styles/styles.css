@@ -1,0 +1,6 @@
+/* random dog picture */
+
+.dog-img {
+    display: flex;
+    justify-content: center;
+}
