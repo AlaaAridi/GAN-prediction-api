@@ -57,6 +57,7 @@ function getRandomDogImg() {
         })
 }
 
+
 function display_image(image_url) {
     document.getElementById("image").src = image_url;
 }

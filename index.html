@@ -10,18 +10,22 @@
 </head>
 
 <body>
-    <div class="dog-img">
-        <img id="image">
-    </div>
-    <!--<image src="">-->
     <div class="main-container">
+        <div class="dog-img">
+            <img id="image">
+        </div>
         <div>
             <input type="text" id="user-name" placeholder="type name here..." />
+            <button id="predict" class="btn">Predict</button>
         </div>
-        <button id="predict" class="btn">Predict</button>
-        <p id="gender">Gender:</p>
-        <p id="age">Age:</p>
-        <p id="nat">Nationality:</p>
+        <div class="results">
+            <p>Gender:</p>
+            <p id="gender"></p>
+            <p>Age:</p>
+            <p id="age"></p>
+            <p>Nationality:</p>
+            <p id="nat"></p>
+        </div>
     </div>
     <script src="scripts/scripts.js"></script>
 </body>
