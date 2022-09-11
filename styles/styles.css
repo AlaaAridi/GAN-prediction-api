@@ -1,0 +1,20 @@
+/* random dog picture */
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dog-img {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: fit-content;
+    height: 50vh;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+}
