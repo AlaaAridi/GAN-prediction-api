@@ -3,4 +3,7 @@
 .dog-img {
     display: flex;
     justify-content: center;
+    align-content: center;
+    width: fit-content;
+    height: 50vh;
 }
