@@ -1,6 +1,9 @@
 /* random dog picture */
 
 .dog-img {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-content: center;

@@ -1,4 +1,6 @@
 // Creating Constants
+
+
 window.addEventListener("load", getRandomDogImg);
 
 const predict = document.getElementById("predict");
@@ -6,15 +8,20 @@ predict.addEventListener("click", getGen);
 predict.addEventListener("click", getAge);
 predict.addEventListener("click", getNat);
 
+const gender = document.getElementById("gender");
+const age = document.getElementById("age");
+const nat = document.getElementById("nat");
+
 
 //creating functions
+
 
 function getGen() {
     let userInput = document.getElementById("user-name").value.trim();
     url = "https://api.genderize.io/?name=" + userInput;
     fetch(url)
         .then((response) => response.json())
-        .then((data) => console.log(data))
+        .then((data) => gender.innerText = (JSON.stringify(data)))
 }
 
 
@@ -23,7 +30,7 @@ function getAge() {
     url = "https://api.agify.io/?name=" + userInput;
     fetch(url)
         .then((response) => response.json())
-        .then((data) => console.log(data))
+        .then((data) => age.innerText = (JSON.stringify(data)))
 }
 
 
@@ -32,7 +39,7 @@ function getNat() {
     url = "https://api.nationalize.io/?name=" + userInput;
     fetch(url)
         .then((response) => response.json())
-        .then((data) => console.log(data))
+        .then((data) => nat.innerText = (JSON.stringify(data)))
 }
 
 
